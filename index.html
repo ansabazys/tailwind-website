@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Koulen&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-family-header: "Frank Ruhl Libre", serif;
+        --font-family-header-special: "Koulen", sans;
+        --font-family-body: "Quicksand", sans-serif;
+
+        --text-tiny: 0.68rem;
+
+        --color-primary-white: #ffffff;
+        --color-primary-cream: #f3eeea;
+        --color-primary-blue: #8dc0d2;
+        --color-light-blue: #8cc1d2;
+        --color-neutral-grey: #666666;
+        --color-primary-orange: #c66e4e;
+        --color-primary-green: #314438;
+        --color-primary-black: #000000;
+        --color-promo-dark-gray: #1a1a1a;
+        --color-primary-ultra-dark-gray: #222326;
+        --color-primary-green-20: rgba(49, 68, 56, 0.2);
+        --color-primary-green-20-hex: #d6d9d7;
+        --color-primary-green-50: rgba(49, 68, 56, 0.5);
+        --color-primary-green-50-hex: #98a19b;
+        --color-warning-red: #a72100;
+        --color-render-bg-color: #f0f0f0;
+        --color-neutral-light-gray: #ccc;
+        --color-primary-light-gray: #f3f0ed;
+      }
+    </style>
+  </head>
+  <body class="font-family-body h-full m-0">
+    <header class="w-full">
+      <section
+        class="bg-primary-green text-primary-white text-xs w-ful flex items-center py-2 md:py-2 relative z-10"
+      >
+        <div
+          class="w-full lg:absolute text-center text-tiny sm:text-xs px-2 flex justify-center items-center"
+        >
+          <p class="">
+            <strong>ENDS SOON:</strong> Start your fall reset with up to $300
+            off
+            <a
+              href="/collections/work-from-home"
+              class="underline"
+              title="Work from Home"
+            >
+              home office bestsellers</a
+            >
+            using code <strong>LABOURDAY</strong>
+            . All orders ship free.
+          </p>
+        </div>
+
+        <div class="gap-7 justify-end w-full px-10 hidden lg:flex">
+          <div class="flex items-center gap-1">
+            <span>About</span>
+            <svg
+              aria-hidden="true"
+              tabindex="-1"
+              class="size-3"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="#ffffff"
+                d="M16 21.7282L28.445 9L32 12.6359L16 29L0 12.6359L3.555 9L16 21.7282Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="flex items-center gap-1">
+            <span>Support</span>
+            <svg
+              aria-hidden="true"
+              tabindex="-1"
+              class="w-3"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="#ffffff"
+                d="M16 21.7282L28.445 9L32 12.6359L16 29L0 12.6359L3.555 9L16 21.7282Z"
+              ></path>
+            </svg>
+          </div>
+
+          <img
+            class="w-6"
+            src="https://cdn.shopify.com/s/files/1/0287/3429/2028/files/ca-flag.jpg?v=1729609521"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section
+        class="flex py-4 w-full z-10 relative items-center text-xs tracking-wider font-bold justify-between bg-primary-light-gray"
+      >
+        <picture class="absolute flex justify-center w-full p-0">
+          <img
+            src="//www.branchfurniture.ca/cdn/shop/files/Branch_Normal.png?v=1729608557"
+            class="md:w-64 w-46"
+            alt="Branch"
+          />
+        </picture>
+
+        <div class="w-full flex justify-between px-6 md:px-12 z-10">
+          <div class="md:flex hidden items-center gap-2">
+            <span>HOME OFFICE</span>
+            <div
+              class="w-7 h-4 bg-primary-green rounded-2xl p-[1px] relative cursor-pointer"
+            >
+              <button
+                class="h-[.9rem] w-1/2 bg-primary-white rounded-2xl cursor-pointer focus:right-[.02rem] absolute"
+              ></button>
+            </div>
+            <span class="text-primary-green-50">BUSINESS</span>
+          </div>
+
+          <svg
+            class="md:hidden block"
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <div class="flex items-center gap-4">
+            <button
+              class="bg-primary-green cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
+            >
+              DESIGN MY OFFICE
+            </button>
+            <svg
+              aria-hidden="true"
+              tabindex="-1"
+              role="presentation"
+              class="w-6 block cursor-pointer"
+              viewBox="0 0 22 19"
+            >
+              <path
+                fill="#314438"
+                d="M16.8271 5.25719L15.7469 1.74858C15.4776 0.804423 14.5327 0.129639 13.5206 0.129639H8.1903C7.11011 0.129639 6.16595 0.804423 5.96392 1.74858L4.81638 5.25719H0.0942383L3.19744 16.9299C3.46681 17.874 4.41232 18.5488 5.4245 18.5488H16.287C17.3666 18.5488 18.3107 17.874 18.5141 16.9299L21.55 5.25719H16.8271ZM10.3493 12.4098V17.5373H8.32566L7.24614 12.4098H10.3493ZM7.24614 11.3976L6.30199 6.27004H10.4174V11.3976H7.24614ZM11.3622 12.4098H14.3981L13.3185 17.5373H11.2949V12.4098H11.3622ZM11.3622 11.3976V6.27004H15.4776L14.5334 11.3976H11.3622ZM16.4897 6.33739H20.2011L18.8515 11.4649H15.4782L16.4897 6.33739ZM7.31349 1.68191C7.38151 1.34452 7.7189 1.14182 8.12363 1.14182H13.6559C14.0607 1.14182 14.3981 1.34452 14.4654 1.68191L15.4776 5.25787H6.30199L7.31349 1.68191ZM5.22246 6.33739L6.23397 11.4649H2.86072L1.51115 6.33739H5.22246ZM4.48034 16.9299L3.19811 12.4764H6.16662L7.24614 17.6047H5.4245C5.01909 17.5367 4.54768 17.2673 4.48034 16.9299ZM17.1639 16.9299C17.0285 17.2666 16.6918 17.5367 16.219 17.6047H14.4654L15.5449 12.4764H18.5141L17.1639 16.9299Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="hidden md:block relative z-10 bg-primary-white w-full border-b-1 border-primary-light-gray"
+      >
+        <nav class="flex relative justify-center">
+          <ul
+            class="flex gap-3 tracking-wider text-sm font-bold text-primary-green"
+          >
+            <li class="group">
+              <button
+                class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200 cursor-pointer"
+              >
+                <a href="">SHOP BY</a>
+              </button>
+              <div
+                class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <div
+                  class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                >
+                  <section class="flex w-full gap-9 justify-center">
+                    <div class="flex gap-24">
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Bestsellers
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Verve Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Duo Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Bestsellers</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          New Arrivals
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Aire Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Four Leg Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Desk Riser</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Adjustable Footrest</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All New Arrivals</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Spaces
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Midcentury Sanctuary</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Scandinavian Studio</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Organized Oasis</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Compact Spaces</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Bedside Bureau</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Spaces</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Support Needs
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Posture</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Lumbar Support</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Neck Support</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Active Work</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                    />
+
+                    <div class="flex justify-start">
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/nav_b0fb147c-b36c-4e75-b042-6a64dc0fdf10.jpg?v=1729551845"
+                          alt=""
+                        />
+                        <h1
+                          class="font-family-header text-xl font-light tracking-tight max-w-[15rem]"
+                        >
+                          Build your office without breaking the bank.
+                        </h1>
+                        <p class="pt-3 max-w-[18rem] font-normal">
+                          We make beautiful, durable and supportive office
+                          furniture to help you work and feel your best.
+                        </p>
+                      </picture>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li class="group">
+              <button
+                class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+              >
+                <a href="">OFFICE CHAIRS</a>
+              </button>
+              <div
+                class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <div
+                  class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                >
+                  <section class="flex w-full gap-9 justify-center">
+                    <div class="flex gap-24">
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Bestsellers
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Verve Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Duo Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Bestsellers</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                    />
+
+                    <div class="flex justify-start gap-5">
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li class="group">
+              <button
+                class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+              >
+                <a href="">DESK & TABLES</a>
+              </button>
+              <div
+                class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <div
+                  class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                >
+                  <section class="flex w-full gap-9 justify-center">
+                    <div class="flex gap-24">
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Bestsellers
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Verve Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Duo Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Bestsellers</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                    />
+
+                    <div class="flex justify-start gap-5">
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li class="group">
+              <button
+                class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+              >
+                <a href="">BUNDLES</a>
+              </button>
+              <div
+                class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <div
+                  class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                >
+                  <section class="flex w-full gap-9 justify-center">
+                    <div class="flex gap-24">
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Bestsellers
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Verve Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Duo Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Bestsellers</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                    />
+
+                    <div class="flex justify-start gap-5">
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li class="group">
+              <button
+                class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+              >
+                <a href="">STORAGE & ACCESSORIES</a>
+              </button>
+              <div
+                class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+              >
+                <div
+                  class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                >
+                  <section class="flex w-full gap-9 justify-center">
+                    <div class="flex gap-24">
+                      <div class="flex flex-col gap-2">
+                        <h1
+                          class="font-family-header text-2xl font-light tracking-tight"
+                        >
+                          Bestsellers
+                        </h1>
+                        <nav>
+                          <ul class="flex flex-col gap-1 font-normal">
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Ergonomic Chair Pro</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Verve Chair</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="">Duo Standing Desk</a>
+                            </li>
+                            <li class="hover:underline decoration-blue-200">
+                              <a href="" class="font-bold">All Bestsellers</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+
+                    <hr
+                      class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                    />
+
+                    <div class="flex justify-start gap-5">
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                      <picture>
+                        <img
+                          class="w-56"
+                          src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                          alt=""
+                        />
+                        <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                          Ergonomic Chair
+                        </h1>
+                        <p class="pt-1 font-normal">$449</p>
+                        <a href="" class="underline mt-3">6,624 Reviews</a>
+                      </picture>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                class="p-5 text-warning-red hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+              >
+                <a href="">SALE</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <div class="fixed w-full top-0 z-5">
+        <section
+          class="flex py-4 w-full items-center text-xs tracking-wider font-bold justify-between bg-primary-light-gray"
+        >
+          <picture class="absolute flex justify-center w-full p-0">
+            <img
+              src="//www.branchfurniture.ca/cdn/shop/files/Branch_Normal.png?v=1729608557"
+              class="md:w-64 w-46"
+              alt="Branch"
+            />
+          </picture>
+
+          <div class="w-full flex justify-between px-6 md:px-12 z-10">
+            <div class="md:flex hidden items-center gap-2">
+              <span>HOME OFFICE</span>
+              <div
+                class="w-7 h-4 bg-primary-green rounded-2xl p-[1px] relative"
+              >
+                <button
+                  class="h-[.9rem] w-1/2 bg-primary-white rounded-2xl focus:right-[.02rem] absolute"
+                ></button>
+              </div>
+              <span class="text-primary-green-50">BUSINESS</span>
+            </div>
+
+            <svg
+              class="md:hidden block"
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 18L20 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L20 12"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 6L20 6"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <div class="flex items-center gap-4">
+              <button
+                class="bg-primary-green cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
+              >
+                DESIGN MY OFFICE
+              </button>
+              <svg
+                aria-hidden="true"
+                tabindex="-1"
+                role="presentation"
+                class="w-6 block"
+                viewBox="0 0 22 19"
+              >
+                <path
+                  fill="#314438"
+                  d="M16.8271 5.25719L15.7469 1.74858C15.4776 0.804423 14.5327 0.129639 13.5206 0.129639H8.1903C7.11011 0.129639 6.16595 0.804423 5.96392 1.74858L4.81638 5.25719H0.0942383L3.19744 16.9299C3.46681 17.874 4.41232 18.5488 5.4245 18.5488H16.287C17.3666 18.5488 18.3107 17.874 18.5141 16.9299L21.55 5.25719H16.8271ZM10.3493 12.4098V17.5373H8.32566L7.24614 12.4098H10.3493ZM7.24614 11.3976L6.30199 6.27004H10.4174V11.3976H7.24614ZM11.3622 12.4098H14.3981L13.3185 17.5373H11.2949V12.4098H11.3622ZM11.3622 11.3976V6.27004H15.4776L14.5334 11.3976H11.3622ZM16.4897 6.33739H20.2011L18.8515 11.4649H15.4782L16.4897 6.33739ZM7.31349 1.68191C7.38151 1.34452 7.7189 1.14182 8.12363 1.14182H13.6559C14.0607 1.14182 14.3981 1.34452 14.4654 1.68191L15.4776 5.25787H6.30199L7.31349 1.68191ZM5.22246 6.33739L6.23397 11.4649H2.86072L1.51115 6.33739H5.22246ZM4.48034 16.9299L3.19811 12.4764H6.16662L7.24614 17.6047H5.4245C5.01909 17.5367 4.54768 17.2673 4.48034 16.9299ZM17.1639 16.9299C17.0285 17.2666 16.6918 17.5367 16.219 17.6047H14.4654L15.5449 12.4764H18.5141L17.1639 16.9299Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="hidden md:block relative z-10 bg-primary-white w-full border-b-1 border-primary-light-gray"
+        >
+          <nav class="flex relative justify-center">
+            <ul
+              class="flex gap-3 tracking-wider text-sm font-bold text-primary-green"
+            >
+              <li class="group">
+                <button
+                  class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200 cursor-pointer"
+                >
+                  <a href="">SHOP BY</a>
+                </button>
+                <div
+                  class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                  >
+                    <section class="flex w-full gap-9 justify-center">
+                      <div class="flex gap-24">
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Bestsellers
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Verve Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Duo Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Bestsellers</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            New Arrivals
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Aire Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Four Leg Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Desk Riser</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Adjustable Footrest</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold"
+                                  >All New Arrivals</a
+                                >
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Spaces
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Midcentury Sanctuary</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Scandinavian Studio</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Organized Oasis</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Compact Spaces</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Bedside Bureau</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Spaces</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Support Needs
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Posture</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Lumbar Support</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Neck Support</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Active Work</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <hr
+                        class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                      />
+
+                      <div class="flex justify-start">
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/nav_b0fb147c-b36c-4e75-b042-6a64dc0fdf10.jpg?v=1729551845"
+                            alt=""
+                          />
+                          <h1
+                            class="font-family-header text-xl font-light tracking-tight max-w-[15rem]"
+                          >
+                            Build your office without breaking the bank.
+                          </h1>
+                          <p class="pt-3 max-w-[18rem] font-normal">
+                            We make beautiful, durable and supportive office
+                            furniture to help you work and feel your best.
+                          </p>
+                        </picture>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <button
+                  class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+                >
+                  <a href="">OFFICE CHAIRS</a>
+                </button>
+                <div
+                  class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                  >
+                    <section class="flex w-full gap-9 justify-center">
+                      <div class="flex gap-24">
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Bestsellers
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Verve Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Duo Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Bestsellers</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <hr
+                        class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                      />
+
+                      <div class="flex justify-start gap-5">
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <button
+                  class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+                >
+                  <a href="">DESK & TABLES</a>
+                </button>
+                <div
+                  class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                  >
+                    <section class="flex w-full gap-9 justify-center">
+                      <div class="flex gap-24">
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Bestsellers
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Verve Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Duo Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Bestsellers</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <hr
+                        class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                      />
+
+                      <div class="flex justify-start gap-5">
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <button
+                  class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+                >
+                  <a href="">BUNDLES</a>
+                </button>
+                <div
+                  class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                  >
+                    <section class="flex w-full gap-9 justify-center">
+                      <div class="flex gap-24">
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Bestsellers
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Verve Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Duo Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Bestsellers</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <hr
+                        class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                      />
+
+                      <div class="flex justify-start gap-5">
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+              <li class="group">
+                <button
+                  class="p-5 hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+                >
+                  <a href="">STORAGE & ACCESSORIES</a>
+                </button>
+                <div
+                  class="absolute top-0 left-0 w-full z-20 duration-500 ease-in-out group-hover:translate-y-9 h-1/2 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+                >
+                  <div
+                    class="relative top-6 p-6 bg-primary-white border-t-1 border-primary-light-gray"
+                  >
+                    <section class="flex w-full gap-9 justify-center">
+                      <div class="flex gap-24">
+                        <div class="flex flex-col gap-2">
+                          <h1
+                            class="font-family-header text-2xl font-light tracking-tight"
+                          >
+                            Bestsellers
+                          </h1>
+                          <nav>
+                            <ul class="flex flex-col gap-1 font-normal">
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Ergonomic Chair Pro</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Verve Chair</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="">Duo Standing Desk</a>
+                              </li>
+                              <li class="hover:underline decoration-blue-200">
+                                <a href="" class="font-bold">All Bestsellers</a>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+
+                      <hr
+                        class="h-72 bg-gray-200 border-l-2 border-neutral-light-gray"
+                      />
+
+                      <div class="flex justify-start gap-5">
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair-pro.webp?v=1734728083"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                        <picture>
+                          <img
+                            class="w-56"
+                            src="//www.branchfurniture.ca/cdn/shop/files/ergonomic-chair.webp?v=1740171313"
+                            alt=""
+                          />
+                          <h1 class="text-sm pt-5 tracking-tight max-w-[15rem]">
+                            Ergonomic Chair
+                          </h1>
+                          <p class="pt-1 font-normal">$449</p>
+                          <a href="" class="underline mt-3">6,624 Reviews</a>
+                        </picture>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="p-5 text-warning-red hover:underline underline-offset-20 decoration-3 decoration-blue-200"
+                >
+                  <a href="">SALE</a>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="md:max-h-[85vh] h-[90vh] w-full relative">
+          <video
+            autoplay
+            loop
+            muted
+            class="md:max-h-[85vh] h-[90vh] w-full object-cover"
+          >
+            <source
+              class=""
+              media="(min-width: 768px)"
+              src="//www.branchfurniture.ca/cdn/shop/videos/c/vp/cebccb5a99f3411db3c4c8221ba4b122/cebccb5a99f3411db3c4c8221ba4b122.HD-1080p-2.5Mbps-23969442.mp4?v=0"
+              type="video/mp4"
+            />
+            <source
+              src="//www.branchfurniture.ca/cdn/shop/videos/c/vp/5a1a5f981b19416e9fb20e29522acde9/5a1a5f981b19416e9fb20e29522acde9.HD-1080p-2.5Mbps-23970134.mp4?v=0"
+            />
+          </video>
+
+          <article
+            class="h-fit w-full justify-center flex items-end md:text-start text-center"
+          >
+            <div
+              class="absolute text-primary-white md:left-23 justify-center bottom-1/5 max-w-86 flex flex-col gap-5 md:gap-8"
+            >
+              <h1
+                class="font-family-header text-4xl md:text-5xl tracking-tighter"
+              >
+                The Labour Day Sale Ends Soon
+              </h1>
+              <p class="text-sm md:text-base">
+                Unlock our best offer of the season when you upgrade your office
+                using code <strong>LABOURDAY</strong>.
+              </p>
+              <div class="flex flex-col gap-3 items-center md:items-start">
+                <button
+                  class="md:w-3/4 w-full py-4 px-2 bg-primary-white text-primary-green text-sm tracking-wider font-bold"
+                >
+                  SHOP NOW
+                </button>
+                <p class="text-sm">
+                  Need help?
+                  <a href="" class="font-bold underline underline-offset-4"
+                    >Take our quiz.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div
+          class="h-full bg-primary-green p-9 flex flex-col w-full justify-center items-center text-primary-white text-center gap-2"
+        >
+          <span class="font-bold tracking-wider">PRESS</span>
+          <h1
+            class="font-family-header text-xl md:text-3xl w-full md:max-w-[55rem] px-3 font-medium md:px-12"
+          >
+            "WFH in comfort with Branch's high-quality ergonomic chairs and
+            standing desks"
+          </h1>
+          <div
+            class="flex md:justify-center items-end pt-6 md:gap-34 w-full justify-between"
+          >
+            <div>
+              <img
+                class="h-6"
+                src="//www.branchfurniture.ca/cdn/shop/files/GQ_2b74f2b3-2021-4200-b26b-9879b750e001_200x.png?v=1688696426"
+                alt=""
+              />
+            </div>
+            <div class="hidden md:block">
+              <img
+                class="h-6"
+                src="//www.branchfurniture.ca/cdn/shop/files/Gear_Patrol_50b962ca-d1f9-486c-b9ba-69c5466996d5_200x.png?v=1711381510"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                class="h-6"
+                src="//www.branchfurniture.ca/cdn/shop/files/Logo_1_cafa1d43-f3e0-490c-a9a8-5f4de8c095c8_200x.png?v=1688696419"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                class="h-6"
+                src="//www.branchfurniture.ca/cdn/shop/files/CNN_200x.png?v=1677523441"
+                alt=""
+              />
+            </div>
+            <div class="hidden md:block">
+              <img
+                class="h-6"
+                src="//www.branchfurniture.ca/cdn/shop/files/New_york_mag_200x.png?v=1688696426"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="md:py-26 py-15 grid gap-15">
+          <div class="flex justify-center items-center gap-10 flex-col">
+            <h1
+              class="font-family-header tracking-tight text-3xl text-center md:text-4xl text-primary-green"
+            >
+              Wherever you are, work your best
+            </h1>
+            <div>
+              <div
+                class="md:gap-10 gap-5 max-w-[70rem] md:flex-row flex-col flex px-6"
+              >
+                <picture class="">
+                  <img
+                    class="md:h-[360px] h-[330px] object-cover"
+                    src="//www.branchfurniture.ca/cdn/shop/files/Home_Office_Aire.webp?v=1739919941"
+                    alt=""
+                  />
+
+                  <div class="flex gap-2 items-center pt-1">
+                    <h1 class="text-2xl font-bold text-light-blue">
+                      Home Office
+                    </h1>
+                    <svg
+                      aria-hidden="true"
+                      tabindex="-1"
+                      role="presentation"
+                      class="w-5"
+                      viewBox="0 0 32 32"
+                    >
+                      <circle cx="16" cy="16" r="16" fill="#8DC0D2"></circle>
+                      <path
+                        d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <p class="hidden md:block">
+                    Work essentials for everyday use.
+                  </p>
+                </picture>
+                <picture>
+                  <img
+                    class="md:h-[360px] h-[330px] object-cover"
+                    src="//www.branchfurniture.ca/cdn/shop/files/pl-branch-conference-table-fa22-detail-866_2.jpg?v=1739919992"
+                    alt=""
+                  />
+                  <div class="flex gap-2 items-center pt-1">
+                    <h1 class="text-2xl font-bold text-light-blue">
+                      Team Office
+                    </h1>
+                    <svg
+                      aria-hidden="true"
+                      tabindex="-1"
+                      role="presentation"
+                      class="w-5"
+                      viewBox="0 0 32 32"
+                    >
+                      <circle cx="16" cy="16" r="16" fill="#8DC0D2"></circle>
+                      <path
+                        d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="hidden md:block">
+                    Solutions for teams of all sizes.
+                  </p>
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-center items-center gap-5 flex-col">
+              <h1
+                class="font-family-header tracking-tight text-3xl text-center md:text-4xl text-primary-green"
+              >
+                Explore our products
+              </h1>
+              <div>
+                <div
+                  class="md:gap-5 gap-5 max-w-[70rem] md:flex-row items-center flex-col flex px-6"
+                >
+                  <picture>
+                    <div
+                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                    >
+                      <img
+                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        src="//www.branchfurniture.ca/cdn/shop/files/Chairs_Verve_Wheat.webp?v=1739919940"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center pt-1">
+                      <h1 class="text-2xl text-center font-bold">Chairs</h1>
+                      <div class="flex text-light-blue gap-1 font-bold">
+                        <span>SEE ALL</span>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="16"
+                            fill="#8DC0D2"
+                          ></circle>
+                          <path
+                            d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </picture>
+                  <picture>
+                    <div
+                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                    >
+                      <img
+                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        src="//www.branchfurniture.ca/cdn/shop/files/Desks_6b21f763-4f8b-421b-9f03-375da3e13b18.jpg?v=1692872761"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center pt-1">
+                      <h1 class="text-2xl text-center font-bold">Desks</h1>
+                      <div class="flex text-light-blue gap-1 font-bold">
+                        <span>SEE ALL</span>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="16"
+                            fill="#8DC0D2"
+                          ></circle>
+                          <path
+                            d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </picture>
+                  <picture>
+                    <div
+                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                    >
+                      <img
+                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        src="//www.branchfurniture.ca/cdn/shop/files/Homepage-DTC-Collections-Accessories.webp?v=1743520723"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center pt-1">
+                      <h1 class="text-2xl text-center font-bold">
+                        Accessories
+                      </h1>
+                      <div class="flex text-light-blue gap-1 font-bold">
+                        <span>SEE ALL</span>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="16"
+                            fill="#8DC0D2"
+                          ></circle>
+                          <path
+                            d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </picture>
+                  <picture>
+                    <div
+                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                    >
+                      <img
+                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        src="//www.branchfurniture.ca/cdn/shop/files/image_1_77c6bded-8ed0-481b-b851-4b4c3b1f93eb.jpg?v=1743520799"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center pt-1">
+                      <h1 class="text-2xl text-center font-bold">Bundles</h1>
+                      <div class="flex text-light-blue gap-1 font-bold">
+                        <span>SEE ALL</span>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <circle
+                            cx="16"
+                            cy="16"
+                            r="16"
+                            fill="#8DC0D2"
+                          ></circle>
+                          <path
+                            d="M19.0172 15.9995L12.4172 9.39949L14.3026 7.51416L22.7879 15.9995L14.3026 24.4848L12.4172 22.5995L19.0172 15.9995Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </picture>
+                </div>
+              </div>
+              <button>
+                
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
