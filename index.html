@@ -154,7 +154,7 @@
 
           <div class="flex items-center gap-4">
             <button
-              class="bg-primary-green cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
+              class="bg-primary-green duration-500 cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
             >
               DESIGN MY OFFICE
             </button>
@@ -748,7 +748,7 @@
 
             <div class="flex items-center gap-4">
               <button
-                class="bg-primary-green cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
+                class="bg-primary-green duration-500 cursor-pointer hidden md:block text-primary-white p-1 px-2 hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
               >
                 DESIGN MY OFFICE
               </button>
@@ -1328,13 +1328,15 @@
               </p>
               <div class="flex flex-col gap-3 items-center md:items-start">
                 <button
-                  class="md:w-3/4 w-full py-4 px-2 bg-primary-white text-primary-green text-sm tracking-wider font-bold"
+                  class="md:w-3/4 w-full hover:bg-transparent border-2 border-primary-white hover:text-primary-white duration-500 cursor-pointer py-4 px-2 bg-primary-white text-primary-green text-sm tracking-wider font-bold"
                 >
                   SHOP NOW
                 </button>
                 <p class="text-sm">
                   Need help?
-                  <a href="" class="font-bold underline underline-offset-4"
+                  <a
+                    href=""
+                    class="font-bold underline hover:text-light-blue underline-offset-4"
                     >Take our quiz.</a
                   >
                 </p>
@@ -1398,8 +1400,10 @@
       </section>
 
       <section>
-        <div class="md:py-26 py-15 grid gap-15">
-          <div class="flex justify-center items-center gap-10 flex-col">
+        <div class="md:py-26 py-15 grid gap-15 w-full">
+          <div
+            class="flex justify-center items-center gap-10 flex-col flex-wrap"
+          >
             <h1
               class="font-family-header tracking-tight text-3xl text-center md:text-4xl text-primary-green"
             >
@@ -1410,11 +1414,15 @@
                 class="md:gap-10 gap-5 max-w-[70rem] md:flex-row flex-col flex px-6"
               >
                 <picture class="">
-                  <img
-                    class="md:h-[360px] h-[330px] object-cover"
-                    src="//www.branchfurniture.ca/cdn/shop/files/Home_Office_Aire.webp?v=1739919941"
-                    alt=""
-                  />
+                  <div
+                    class="md:h-[360px] h-[330px] object-cover overflow-hidden"
+                  >
+                    <img
+                      class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                      src="//www.branchfurniture.ca/cdn/shop/files/Home_Office_Aire.webp?v=1739919941"
+                      alt=""
+                    />
+                  </div>
 
                   <div class="flex gap-2 items-center pt-1">
                     <h1 class="text-2xl font-bold text-light-blue">
@@ -1440,11 +1448,15 @@
                   </p>
                 </picture>
                 <picture>
-                  <img
-                    class="md:h-[360px] h-[330px] object-cover"
-                    src="//www.branchfurniture.ca/cdn/shop/files/pl-branch-conference-table-fa22-detail-866_2.jpg?v=1739919992"
-                    alt=""
-                  />
+                  <div
+                    class="md:h-[360px] h-[330px] object-cover overflow-hidden"
+                  >
+                    <img
+                      class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                      src="//www.branchfurniture.ca/cdn/shop/files/pl-branch-conference-table-fa22-detail-866_2.jpg?v=1739919992"
+                      alt=""
+                    />
+                  </div>
                   <div class="flex gap-2 items-center pt-1">
                     <h1 class="text-2xl font-bold text-light-blue">
                       Team Office
@@ -1472,7 +1484,7 @@
           </div>
 
           <div>
-            <div class="flex justify-center items-center gap-5 flex-col">
+            <div class="flex justify-center md:items-center gap-5 flex-col">
               <h1
                 class="font-family-header tracking-tight text-3xl text-center md:text-4xl text-primary-green"
               >
@@ -1480,14 +1492,14 @@
               </h1>
               <div>
                 <div
-                  class="md:gap-5 gap-5 max-w-[70rem] md:flex-row items-center flex-col flex px-6"
+                  class="md:gap-5 gap-5 max-w-[80rem] md:justify-center px-5 md:px-0 w-full md:w-fit justify-start items-center flex-wrap flex-col md:flex-row flex"
                 >
-                  <picture>
+                  <picture class="w-full md:w-fit">
                     <div
-                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                      class="md:h-[400px] h-[330px] md:w-[260px] w-full bg-primary-green md:overflow-hidden overflow-none"
                     >
                       <img
-                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        class="h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
                         src="//www.branchfurniture.ca/cdn/shop/files/Chairs_Verve_Wheat.webp?v=1739919940"
                         alt=""
                       />
@@ -1518,12 +1530,12 @@
                       </div>
                     </div>
                   </picture>
-                  <picture>
+                  <picture class="w-full md:w-fit">
                     <div
-                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                      class="md:h-[400px] h-[330px] md:w-[260px] w-full bg-primary-green md:overflow-hidden overflow-none"
                     >
                       <img
-                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        class="h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
                         src="//www.branchfurniture.ca/cdn/shop/files/Desks_6b21f763-4f8b-421b-9f03-375da3e13b18.jpg?v=1692872761"
                         alt=""
                       />
@@ -1554,12 +1566,12 @@
                       </div>
                     </div>
                   </picture>
-                  <picture>
+                  <picture class="w-full md:w-fit">
                     <div
-                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                      class="md:h-[400px] h-[330px] md:w-[260px] w-full bg-primary-green md:overflow-hidden overflow-none"
                     >
                       <img
-                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        class="h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
                         src="//www.branchfurniture.ca/cdn/shop/files/Homepage-DTC-Collections-Accessories.webp?v=1743520723"
                         alt=""
                       />
@@ -1592,12 +1604,12 @@
                       </div>
                     </div>
                   </picture>
-                  <picture>
+                  <picture class="w-full md:w-fit">
                     <div
-                      class="md:h-[360px] h-[330px] bg-primary-green overflow-hidden"
+                      class="md:h-[400px] h-[330px] md:w-[260px] w-full bg-primary-green md:overflow-hidden overflow-none"
                     >
                       <img
-                        class="h-full object-cover duration-500 ease-in-out hover:scale-105"
+                        class="h-full w-full object-cover duration-500 ease-in-out hover:scale-105"
                         src="//www.branchfurniture.ca/cdn/shop/files/image_1_77c6bded-8ed0-481b-b851-4b4c3b1f93eb.jpg?v=1743520799"
                         alt=""
                       />
@@ -1630,10 +1642,119 @@
                   </picture>
                 </div>
               </div>
-              <button>
-                
-              </button>
+              <div class="flex w-full justify-center items-center">
+                <button
+                  class="text-sm mt-5 w-fit tracking-wide bg-primary-green text-primary-white py-3 px-14 font-bold border-2 border-primary-green hover:bg-primary-white hover:text-primary-green duration-500 cursor-pointer"
+                >
+                  SHOP COLLECTIONS
+                </button>
+              </div>
             </div>
+
+            <!-- <div
+            class="flex gap-8 flex-col justify-center  items-center text-center bg-primary-light-gray p-20"
+          >
+            <div>
+              <h1
+                class="font-family-header tracking-tight text3xl text-center md:text-4xl text-primary-green"
+              >
+                We do office furniture a little bit different.
+              </h1>
+              <p class="pt-3">
+                That means easy, affordable, and flexible—whether you’re
+                furnishing your home office or your business.
+              </p>
+            </div>
+
+            <div class="flex w-full justify-center items-center">
+              <div class="px-10 py-7">
+                <div class="flex justify-center">
+                  <img
+                    class="w-24 h-20"
+                    src="//www.branchfurniture.ca/cdn/shop/files/Ergonomics_simple_62b60253-b885-49c3-b957-f3f08025b7de.png?v=1671710477"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="font-bold pt-5 w-27 text-sm text-primary-green text-center"
+                >
+                  ERGONOMIC SUPPORT
+                </p>
+              </div>
+              <div class="px-10 py-7">
+                <div class="flex justify-center">
+                  <img
+                    class="w-24 h-20"
+                    src="//www.branchfurniture.ca/cdn/shop/files/Middlemen.png?v=1671639759"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="font-bold w-27 pt-5 text-sm text-primary-green text-center"
+                >
+                  FEWER MIDDLEMEN
+                </p>
+              </div>
+              <div class="px-10 py-7">
+                <div class="flex justify-center">
+                  <img
+                    class="w-24 h-20"
+                    src="//www.branchfurniture.ca/cdn/shop/files/Shipping_or_supply_chain_e7f66d38-fa96-426b-a17e-7284e6e64199.png?v=1671710229"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="font-bold w-27 pt-5 text-sm text-primary-green text-center"
+                >
+                  FREE & FAST SHIPPING
+                </p>
+              </div>
+              <div class="flex justify-center items-center text-center relative">
+                <div class="px-10 py-7 bg-primary-white">
+                  <div class="flex justify-center">
+                    <img
+                      class="w-20 h-20"
+                      src="//www.branchfurniture.ca/cdn/shop/files/White_Glove_or_Easy_Assembly_a7867a62-0999-4cfb-841a-9d48205cf0ba.png?v=1671710229"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-bold w-27 pt-5 text-sm text-primary-green text-center"
+                  >
+                    WHITE-GLOVE SERVICE
+                  </p>
+                </div>
+                <div class="px-10 py-7 bg-primary-white">
+                  <div class="flex justify-center">
+                    <img
+                      class="w-20 h-20"
+                      src="//www.branchfurniture.ca/cdn/shop/files/On_your_schedule_e50f21be-a8c0-494b-81ad-fbf2157d3729.png?v=1671710720"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-bold w-27 pt-5 text-sm text-primary-green text-center"
+                  >
+                    QUICK TURNAROUNDS
+                  </p>
+                </div>
+                <div class="px-10 py-7 bg-primary-white">
+                  <div class="flex justify-center">
+                    <img
+                      class="w-20 h-20"
+                      src="//www.branchfurniture.ca/cdn/shop/files/Flex.png?v=1671639765"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="font-bold w-27 pt-5 text-sm text-primary-green text-center"
+                  >
+                    TRADE-IN FLEXIBILITY
+                  </p>
+                </div>
+                <span class="absolute bottom-[180px] text-xs tracking-wider px-2 py-1 rotate-[-5deg] font-bold text-primary-white bg-light-blue">FOR TEAM OFFICES</span>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
