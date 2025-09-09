@@ -35,7 +35,7 @@
     </style>
   </head>
   <body class="font-family-body w-full h-full m-0">
-    <header class="w-full">
+    <header class="w-full fixed z-20">
       <section
         class="bg-primary-green text-primary-white text-xs w-full flex items-center py-2 md:py-2 relative z-10"
       >
@@ -110,42 +110,269 @@
           <div class="md:flex hidden items-center gap-2">
             <span>HOME OFFICE</span>
             <div
-              class="w-7 h-4 bg-primary-green rounded-2xl p-[1px] relative cursor-pointer"
+              class="w-7 h-4 bg-primary-green rounded-4xl p-[1px] relative cursor-pointer"
             >
               <button
-                class="h-[.9rem] w-1/2 bg-primary-white rounded-2xl cursor-pointer focus:right-[.02rem] absolute"
+                class="h-full border-1 border-primary-green top-0 w-1/2 bg-primary-white rounded-4xl cursor-pointer focus:right-[.02rem] absolute"
               ></button>
             </div>
             <span class="text-primary-green-50">BUSINESS</span>
           </div>
 
-          <svg
-            class="md:hidden block"
-            width="25px"
-            height="25px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 18L20 18"
-              stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 12L20 12"
-              stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 6L20 6"
-              stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
+          <div class="w-full md:hidden block">
+            <input type="checkbox" id="menu" class="peer hidden" />
+
+            <label for="menu" class="peer-checked:hidden inline">
+              <svg
+                class=""
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 18L20 18"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4 6L20 6"
+                  stroke="#000000"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </label>
+
+            <label for="menu" class="peer-checked:inline hidden">
+              <svg
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                  fill="#0F1729"
+                />
+              </svg>
+            </label>
+
+            <div
+              class="peer-checked:translate-x-0 absolute mt-4 fixed duration-500 -translate-x-[100%] w-full right-0 h-screen bg-primary-white"
+            >
+              <div>
+                <form action="">
+                  <div class="flex bg-[#f5f6f5] items-center px-7">
+                    <svg
+                      width="20"
+                      height="20"
+                      tabindex="-1"
+                      role="presentation"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.2049 12.952L18 16.7462L16.7462 18L12.952 14.2049C11.5402 15.3366 9.78419 15.9522 7.9748 15.9496C3.57271 15.9496 0 12.3769 0 7.9748C0 3.57271 3.57271 0 7.9748 0C12.3769 0 15.9496 3.57271 15.9496 7.9748C15.9522 9.78419 15.3366 11.5402 14.2049 12.952ZM12.4274 12.2945C13.5519 11.138 14.18 9.58786 14.1774 7.9748C14.1774 4.54741 11.4013 1.77218 7.9748 1.77218C4.54741 1.77218 1.77218 4.54741 1.77218 7.9748C1.77218 11.4013 4.54741 14.1774 7.9748 14.1774C9.58786 14.18 11.138 13.5519 12.2945 12.4274L12.4274 12.2945Z"
+                        fill="#314438"
+                      ></path>
+                    </svg>
+                    <input
+                      type="text"
+                      class="p-4 text-lg outline-none"
+                      placeholder="Search"
+                    />
+                  </div>
+                </form>
+
+                <div class="px-7 py-2 flex flex-col gap-5">
+                  <nav class="">
+                    <ul
+                      class="font-family-header font-normal flex flex-col gap-6 text-3xl text-primary-green"
+                    >
+                      <li class="flex justify-between">
+                        <p>Chairs</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p>Desks</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p>Accessories</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p>Workspace</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p>Bundles</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p>Sale</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p class="font-family-body text-base">Resources</p>
+                        <svg
+                          aria-hidden="true"
+                          tabindex="-1"
+                          role="presentation"
+                          class="w-5"
+                          viewBox="0 0 32 32"
+                        >
+                          <path
+                            fill="gray"
+                            d="M19.3646 16L6 3.555L9.81769 0L27 16L9.81769 32L6 28.445L19.3646 16Z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="flex justify-between">
+                        <p class="font-family-body text-base">For Teams</p>
+                      </li>
+                    </ul>
+                  </nav>
+
+                  <button
+                    class="bg-primary-green duration-500 cursor-pointertext-primary-white py-4 w-full hover:bg-primary-white border-primary-green hover:text-primary-green border-2 z-10"
+                  >
+                    BUILD YOUR OFFICE
+                  </button>
+
+                  <div class="flex justify-between items-center">
+                    <div class="flex gap-5">
+                    <svg
+                      aria-hidden="true"
+                      tabindex="-1"
+                      role="presentation"
+                      class="w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M8.00002 0C10.1736 0 10.4448 0.00799794 11.2976 0.0479999C12.1496 0.0879958 12.7296 0.221598 13.24 0.419999C13.768 0.623195 14.2128 0.898396 14.6576 1.3424C15.0644 1.74231 15.3792 2.22607 15.58 2.76C15.7776 3.26959 15.912 3.85039 15.952 4.70238C15.9896 5.55522 16 5.82642 16 7.99997C16 10.1736 15.992 10.4448 15.952 11.2976C15.912 12.1496 15.7776 12.7296 15.58 13.24C15.3797 13.7742 15.0649 14.2581 14.6576 14.6576C14.2575 15.0642 13.7738 15.379 13.24 15.58C12.7304 15.7776 12.1496 15.912 11.2976 15.952C10.4448 15.9896 10.1736 16 8.00002 16C5.8264 16 5.5552 15.992 4.70242 15.952C3.8504 15.912 3.2704 15.7776 2.76 15.58C2.22586 15.3795 1.74202 15.0647 1.3424 14.6576C0.93552 14.2577 0.620742 13.7739 0.42 13.24C0.221598 12.7304 0.0879959 12.1496 0.0479999 11.2976C0.010398 10.4448 0 10.1736 0 7.99997C0 5.82642 0.00799795 5.55522 0.0479999 4.70238C0.0879959 3.84959 0.221598 3.27039 0.42 2.76C0.620184 2.22574 0.93504 1.74185 1.3424 1.3424C1.74214 0.93538 2.22594 0.620579 2.76 0.419999C3.2704 0.221598 3.8496 0.0879958 4.70242 0.0479999C5.5552 0.0103979 5.8264 0 8.00002 0ZM8.00002 3.99999C6.9391 3.99999 5.92174 4.4214 5.17156 5.17158C4.42144 5.9217 4 6.93911 4 7.99997C4 9.06083 4.42144 10.0782 5.17156 10.8284C5.92174 11.5785 6.9391 12 8.00002 12C9.06088 12 10.0783 11.5785 10.8284 10.8284C11.5785 10.0782 12 9.06083 12 7.99997C12 6.93911 11.5785 5.9217 10.8284 5.17158C10.0783 4.4214 9.06088 3.99999 8.00002 3.99999ZM13.2 3.79999C13.2 3.53477 13.0946 3.28042 12.9071 3.09289C12.7196 2.90535 12.4652 2.79999 12.2 2.79999C11.9348 2.79999 11.6804 2.90535 11.4929 3.09289C11.3054 3.28042 11.2 3.53477 11.2 3.79999C11.2 4.06521 11.3054 4.31956 11.4929 4.50708C11.6804 4.69464 11.9348 4.8 12.2 4.8C12.4652 4.8 12.7196 4.69464 12.9071 4.50708C13.0946 4.31956 13.2 4.06521 13.2 3.79999ZM8.00002 5.59998C8.6365 5.59998 9.24694 5.85282 9.69706 6.30294C10.1471 6.753 10.4 7.36349 10.4 7.99997C10.4 8.63651 10.1471 9.24695 9.69706 9.69701C9.24694 10.1471 8.6365 10.4 8.00002 10.4C7.36348 10.4 6.75304 10.1471 6.30292 9.69701C5.85286 9.24695 5.60002 8.63651 5.60002 7.99997C5.60002 7.36349 5.85286 6.753 6.30292 6.30294C6.75304 5.85282 7.36348 5.59998 8.00002 5.59998Z"
+                        fill="#314438"
+                      ></path>
+                    </svg>
+
+                    <svg
+                      aria-hidden="true"
+                      tabindex="-1"
+                      role="presentation"
+                      class="w-5"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1L5.08519 1.00703L8.56507 5.6025L12.6029 1H15.0629L9.71526 7.1255L16 15.4421V15.4696H11.0663L7.20069 10.4124L2.78383 15.4696H0.316967L6.04974 8.90314L0 1.02757V1ZM13.0784 13.9813L12.9046 13.7346L4.32041 2.39181H2.89406L2.98506 2.52817L11.7485 13.9813H13.0784Z"
+                        fill="#314438"
+                      ></path>
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      tabindex="-1"
+                      role="presentation"
+                      class="w-5"
+                      viewBox="0 0 17 16"
+                    >
+                      <path
+                        fill="#314438"
+                        d="M4.97945 14.0765H2.47491V6.01374H4.97945V14.0765ZM3.72547 4.91381C2.92511 4.91381 2.27539 4.25101 2.27539 3.45065C2.27539 2.64916 2.92511 2 3.72547 2C4.5264 2 5.17556 2.64916 5.17556 3.45065C5.17613 4.25101 4.5264 4.91381 3.72547 4.91381ZM14.3513 14.0765H11.8524V10.1525C11.8524 9.21632 11.8331 8.01748 10.5513 8.01748C9.24898 8.01748 9.04889 9.03385 9.04889 10.0849V14.0765H6.54777V6.01374H8.94942V7.11366H8.98409C9.31833 6.48043 10.1346 5.81137 11.3539 5.81137C13.888 5.81137 14.3541 7.47974 14.3541 9.64719V14.0759L14.3513 14.0765Z"
+                      ></path>
+                    </svg>
+                    </div>
+
+                    <div>
+                      <select name="" id="" class="">
+                        <option value="$CAD" selected>$CAD</option>
+                        <option value="$USD">$USD</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="flex items-center gap-4">
             <button
@@ -688,7 +915,7 @@
         </nav>
       </section>
 
-      <div class="fixed w-full top-0 z-5">
+      <!-- <div class="fixed w-full top-0 z-5">
         <section
           class="flex py-4 w-full items-center text-xs tracking-wider font-bold justify-between bg-primary-light-gray"
         >
@@ -1283,7 +1510,7 @@
             </ul>
           </nav>
         </section>
-      </div>
+      </div> -->
     </header>
 
     <main class="w-full">
@@ -1301,10 +1528,7 @@
               src="assets/desktop.mp4"
               type="video/mp4"
             />
-            <source
-              src="assets/mobile.mp4"
-              type="video/mp4"
-            />
+            <source src="assets/mobile.mp4" type="video/mp4" />
           </video>
 
           <article
@@ -2291,10 +2515,13 @@
                     >
                       <div class="text-sm pb-10 md:pb-0 md:text-base">
                         <p class="font-bold pt-1">Thomas A.</p>
-                        <p class="text-neutral-light-gray">Solutions Engineer</p>
+                        <p class="text-neutral-light-gray">
+                          Solutions Engineer
+                        </p>
                       </div>
                       <p class="text-sm md:pt-10">
-                        "As an engineer I spent an absurd amount of time reviewing chairs...doesn't get better than this!"
+                        "As an engineer I spent an absurd amount of time
+                        reviewing chairs...doesn't get better than this!"
                       </p>
                     </div>
                   </div>
@@ -2314,11 +2541,12 @@
                       class="flex gap-4 md:block flex-col-reverse text-start md:text-center items-start"
                     >
                       <div class="text-sm pb-10 md:pb-0 md:text-base">
-                        <p class="font-bold pt-1">Jonathan Wasserstrum/p>
+                        <p class="font-bold pt-1">Jonathan Wasserstrum/p></p>
                         <p class="text-neutral-light-gray">CEO of Squarefoot</p>
                       </div>
                       <p class="text-sm md:pt-10">
-                        “I see a lot of offices in my line of work. Branch sets a new standard in value for office furnishing.”
+                        “I see a lot of offices in my line of work. Branch sets
+                        a new standard in value for office furnishing.”
                       </p>
                     </div>
                   </div>
@@ -2339,20 +2567,17 @@
                     >
                       <div class="text-sm pb-10 md:pb-0 md:text-base">
                         <p class="font-bold pt-1">Jovanna Feliz</p>
-                        <p class="text-neutral-light-gray">Operations at Hive</p>
+                        <p class="text-neutral-light-gray">
+                          Operations at Hive
+                        </p>
                       </div>
                       <p class="text-sm md:pt-10">
-                     "Branch crushed a tricky installation in our new office at One World Trade Center. Didn't lift a finger."
+                        "Branch crushed a tricky installation in our new office
+                        at One World Trade Center. Didn't lift a finger."
                       </p>
                     </div>
                   </div>
                 </div>
-
-                
-
-               
-
-                
               </div>
             </div>
           </div>
@@ -2432,7 +2657,7 @@
                 </div>
 
                 <div class="grid text-sm grid-cols-2 md:grid-cols-4 gap-10">
-                  <div class="text-primary-white ">
+                  <div class="text-primary-white">
                     <h1 class="text-primary-white opacity-[.4] font-bold">
                       SHOP
                     </h1>
@@ -2449,7 +2674,7 @@
                       ><a class="hover:underline" href="">Open Box</a>
                     </div>
                   </div>
-                  <div class="text-primary-white ">
+                  <div class="text-primary-white">
                     <h1 class="text-primary-white opacity-[.4] font-bold">
                       SHOP
                     </h1>
@@ -2466,7 +2691,7 @@
                     </div>
                   </div>
 
-                  <div class="text-primary-white ">
+                  <div class="text-primary-white">
                     <h1 class="text-primary-white opacity-[.4] font-bold">
                       SHOP
                     </h1>
@@ -2483,7 +2708,7 @@
                       ><a class="hover:underline" href="">Reviews</a>
                     </div>
                   </div>
-                  <div class="text-primary-white ">
+                  <div class="text-primary-white">
                     <h1 class="text-primary-white opacity-[.4] font-bold">
                       SUPPORT
                     </h1>
@@ -2535,18 +2760,43 @@
 
               <hr class="border-primary-white/20" />
 
-              <div class="flex justify-center gap-15 flex-wrap text-primary-white">
+              <div
+                class="flex justify-center gap-15 flex-wrap text-primary-white"
+              >
                 <a href="">Terms & Conditions</a>
                 <a href="">Accessibility</a>
                 <a href="">Privacy Policy</a>
                 <div class="flex gap-2 items-center">
-                  <svg width="30" height="14" viewBox="0 0 30 14" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z" fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd"></path>
-                  <path d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z" fill="#0066FF" fill-rule="evenodd" clip-rule="evenodd"></path>
-                  <path id="x" d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z" fill="#FFFFFF"></path>
-                  <path id="y" d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z" fill="#0066FF"></path>
-                </svg>
-                <a href="">Your Privacy Choices</a>
+                  <svg
+                    width="30"
+                    height="14"
+                    viewBox="0 0 30 14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z"
+                      fill="#FFFFFF"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z"
+                      fill="#0066FF"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                    <path
+                      id="x"
+                      d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      id="y"
+                      d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z"
+                      fill="#0066FF"
+                    ></path>
+                  </svg>
+                  <a href="">Your Privacy Choices</a>
                 </div>
               </div>
             </div>
